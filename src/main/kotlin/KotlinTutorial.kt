@@ -1,17 +1,13 @@
 fun main() {
-    var i = 0
-
-    do {
-        println(i)
-        i++
-        continue
-        var j = 0
-        while (j < 5) {
-            println("----$j")
-            j++
-            break
-            println("I'm not printed")
+    for (i in 1..10) {
+        val prefix = if (i == 1) {
+            "*"
+        } else if (i !in 4..7) {
+            "-"
+        } else {
+            println("-")
+            ">"
         }
-        println("I'm printed")
-    } while (i < 5)
+        println("$prefix $i")
+    }
 }
