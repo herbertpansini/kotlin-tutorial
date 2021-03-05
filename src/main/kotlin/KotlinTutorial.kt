@@ -1,37 +1,17 @@
 fun main() {
-    var a = 5
-    val b = 3.0
+    val names = arrayOf("Jim", "John", "Jenny")
+    val str = arrayOf(1,  "Hi", 'b')
+    str[0] = 'a'
+    val numbers = arrayOf(
+            arrayOf(1, 2, 3),
+            arrayOf(4, 5, 6),
+            arrayOf(7, 8, 9)
+    )
 
-    println("a = $a b = $b")
+    println(numbers[1][1])
 
-    println("a + b = ${a + b}")
-    println("a - b = ${a - b}")
-    println("a * b = ${a * b}")
-    println("a / b = ${a / b}")
-    println("a % b = ${a % b}")
+    names[0] = "Jeremy"
 
-    println("(2 + 2) * 3 = ${(2 + 2) * 3}")
-
-    println("-a: ${-a}")
-
-    a += 2
-    println("a += 2: $a")
-
-    println("a++: ${a++}")
-    println("++a: ${++a}")
-
-    a -= 2
-    println("a -= 2: $a")
-
-    println("a--: ${a--}")
-    println("--a: ${--a}")
-
-    a *= 2
-    println("a *= 2: $a")
-
-    a /= 2
-    println("a /= 2: $a")
-
-    a %= 2
-    println("a %= 2: $a")
+    println("Number of elements: ${names.size}")
+    println("First element: ${names[0]}")
 }
