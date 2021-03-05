@@ -1,17 +1,37 @@
 fun main() {
-    val exampleString = "\"Florian\nWalther\""
-    val exampleRawString = """ "Florian 
-        Walther" """
-    print(exampleRawString)
+    var a = 5
+    val b = 3.0
 
-    val exampleNumber: Double
-    exampleNumber = 2_000_000.12
-    val exampleLong: Long = exampleNumber.toLong()
-    val exampleFloat: Float = 28.3F
+    println("a = $a b = $b")
 
-    val exampleByte: Byte = 127
-    val exampleShort: Short = 363
-    val exampleChar = '?'
-    val exampleInt: Int = exampleChar.toInt()
-    val exampleBoolean = false;
+    println("a + b = ${a + b}")
+    println("a - b = ${a - b}")
+    println("a * b = ${a * b}")
+    println("a / b = ${a / b}")
+    println("a % b = ${a % b}")
+
+    println("(2 + 2) * 3 = ${(2 + 2) * 3}")
+
+    println("-a: ${-a}")
+
+    a += 2
+    println("a += 2: $a")
+
+    println("a++: ${a++}")
+    println("++a: ${++a}")
+
+    a -= 2
+    println("a -= 2: $a")
+
+    println("a--: ${a--}")
+    println("--a: ${--a}")
+
+    a *= 2
+    println("a *= 2: $a")
+
+    a /= 2
+    println("a /= 2: $a")
+
+    a %= 2
+    println("a %= 2: $a")
 }
