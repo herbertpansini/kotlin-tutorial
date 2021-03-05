@@ -1,12 +1,16 @@
 fun main() {
-    val names = arrayOf("Jim", "John", "Jenny", "Jamie")
-    for (name in names) println(name)
+    println("2 > 1 is ${2 > 1}")
+    println("2 < 1 is ${2 < 1}")
+    println("1 >= 1 is ${1 >= 1}")
+    println("1 == 1 is ${1 == 1}")
+    println("1 == 2 is ${1 == 2}")
+    println("1 != 2 is ${1 != 2}")
 
-    for(i in 1..10) println(i)
+    println("!(2 > 1) is ${!(2 > 1)}")
 
-    for (i in 1 until 10) println(i)
+    println("true && false = ${true && false}")
+    println("true || false = ${true || false}")
 
-    for (i in 10 downTo 1) println(i)
-
-    for (i in 'a'..'z' step 2) println(i)
+    val condition = ((2 > 1) || (3 > 2)) && (2 > 3)
+    println(condition)
 }
