@@ -1,17 +1,12 @@
 fun main() {
-    val names = arrayOf("Jim", "John", "Jenny")
-    val str = arrayOf(1,  "Hi", 'b')
-    str[0] = 'a'
-    val numbers = arrayOf(
-            arrayOf(1, 2, 3),
-            arrayOf(4, 5, 6),
-            arrayOf(7, 8, 9)
-    )
+    val names = arrayOf("Jim", "John", "Jenny", "Jamie")
+    for (name in names) println(name)
 
-    println(numbers[1][1])
+    for(i in 1..10) println(i)
 
-    names[0] = "Jeremy"
+    for (i in 1 until 10) println(i)
 
-    println("Number of elements: ${names.size}")
-    println("First element: ${names[0]}")
+    for (i in 10 downTo 1) println(i)
+
+    for (i in 'a'..'z' step 2) println(i)
 }
